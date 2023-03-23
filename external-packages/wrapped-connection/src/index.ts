@@ -3,7 +3,7 @@ import NodeWallet from "@project-serum/anchor/dist/cjs/nodewallet";
 import { Connection, Keypair, Commitment } from "@solana/web3.js";
 import axios from "axios";
 
-export class WrappedConnection extends Connection {
+export default class WrappedConnection extends Connection {
   provider: AnchorProvider;
   payer: Keypair;
   rpcUrl: string;
