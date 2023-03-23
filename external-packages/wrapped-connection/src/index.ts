@@ -1,7 +1,6 @@
 import { AnchorProvider } from "@project-serum/anchor";
 import NodeWallet from "@project-serum/anchor/dist/cjs/nodewallet";
 import { Connection, Keypair, Commitment } from "@solana/web3.js";
-
 import axios from "axios";
 
 export class WrappedConnection extends Connection {
@@ -25,6 +24,10 @@ export class WrappedConnection extends Connection {
       }
     );
     this.payer = payer;
+  }
+
+  public static getConnectionWrapper(rpcUrl: string, keypair: Keypair) {
+    return new WrappedConnection(keypair, rpcUrl);
   }
 
   async getAsset(assetId: any): Promise<any> {
