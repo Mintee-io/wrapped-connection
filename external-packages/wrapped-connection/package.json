@@ -1,7 +1,7 @@
 {
   "name": "@mintee/wrapped-connection",
   "version": "0.0.1",
-  "description": "",
+  "description": "A convenient way to interact with the Solana blockchain + Compressed NFTs.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
