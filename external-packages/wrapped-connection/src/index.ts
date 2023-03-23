@@ -79,4 +79,3 @@ export default class WrappedConnection extends Connection {
     }
   }
 }
-export type WrappedConnectionType = typeof WrappedConnection;
