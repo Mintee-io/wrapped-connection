@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "A convenient way to interact with the Solana blockchain + Compressed NFTs.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/Mintee-io/wrapped-connection#readme",
   "keywords": [
     "Solana",
@@ -14,7 +15,6 @@
     "type": "git",
     "url": "https://github.com/Mintee-io/wrapped-connection.git"
   },
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
