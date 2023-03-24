@@ -79,4 +79,4 @@ class WrappedConnection extends Connection {
     }
   }
 }
-export default { WrappedConnection };
+export default WrappedConnection;

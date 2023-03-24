@@ -151,4 +151,4 @@ var WrappedConnection = /** @class */ (function (_super) {
     };
     return WrappedConnection;
 }(web3_js_1.Connection));
-exports.default = { WrappedConnection: WrappedConnection };
+exports.default = WrappedConnection;

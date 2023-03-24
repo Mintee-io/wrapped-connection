@@ -10,7 +10,4 @@ declare class WrappedConnection extends Connection {
     getAssetProof(assetId: any): Promise<any>;
     getAssetsByOwner(assetId: string, sortBy: any, limit: number, page: number, before: string, after: string): Promise<any>;
 }
-declare const _default: {
-    WrappedConnection: typeof WrappedConnection;
-};
-export default _default;
+export default WrappedConnection;

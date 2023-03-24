@@ -15,9 +15,10 @@ npm install @mintee/wrapped-connection
 ```typescript
 import { WrappedConnection } from "@mintee/wrapped-connection";
 
-const connection = new WrappedConnection(
-  new Connection("https://api.mainnet-beta.solana.com"),
-  "confirmed"
+const keypair = new Keypair();
+const connectionWrapper = WrappedConnection.getConnectionWrapper(
+  "https://api.mainnet-beta.solana.com",
+  keypair
 );
 
 const assetInfo = await connectionWrapper.getAsset(assetId);
